@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="winner" type="id" />
+    <item name="myMora" type="id" />
+    <item name="computerMora" type="id" />
+</resources>
