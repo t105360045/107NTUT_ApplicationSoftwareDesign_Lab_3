@@ -40,7 +40,8 @@ public class MainActivity extends AppCompatActivity
         radioButton3 = (RadioButton) findViewById(R.id.radioButton3);
         radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
         play = (Button) findViewById(R.id.play);
-        name = (TextView) findViewById(R.id.winner);
+        name = (TextView) findViewById(R.id.name);
+        winner = (TextView) findViewById(R.id.winner);
         myMora =(TextView) findViewById(R.id.myMora);
         computerMora = (TextView) findViewById(R.id.computerMora);
 
@@ -63,7 +64,7 @@ public class MainActivity extends AppCompatActivity
                     myMora.setText(MoraString[mora_gamer]);
                     int mora_computer = (int) (Math.random() *3);
                     computerMora.setText(MoraString[mora_computer]);
-                    if((mora_computer == 0 && mora_computer == 1)||(mora_gamer == 1 && mora_computer == 2)||(mora_gamer == 2 && mora_computer == 0))
+                    if((mora_gamer == 0 && mora_computer == 1)||(mora_gamer == 1 && mora_computer == 2)||(mora_gamer == 2 && mora_computer == 0))
                     {
                         winner.setText("電腦");
                         status.setText("可惜，電腦獲勝了");
